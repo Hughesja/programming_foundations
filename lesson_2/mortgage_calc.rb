@@ -21,7 +21,7 @@ def float?(num)
 end
 
 def valid_number?(num)
-    integer?(num) || float?(num)
+  integer?(num) || float?(num)
 end
 
 loop do # This is the main loop of the calculator
@@ -35,7 +35,7 @@ loop do # This is the main loop of the calculator
     if valid_number?(loan_amount)
       break
     else
-     puts "That doesn't seem to be a valid number."
+      puts "That doesn't seem to be a valid number."
     end
   end
 
@@ -56,14 +56,15 @@ loop do # This is the main loop of the calculator
       puts "Please choose option 1, 2, or 3."
     end
   end
-    loan_time_yrs = case loan_time
-                when '1'
-                  30
-                when '2'
-                  15
-                when '3'
-                  10
-                end
+  
+  loan_time_yrs = case loan_time
+                  when '1'
+                    30
+                  when '2'
+                    15
+                  when '3'
+                    10
+                  end
   
   # converting loan_time_yrs to months
   loan_time_months = loan_time_yrs.to_f * 12
